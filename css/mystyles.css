@@ -3,8 +3,32 @@
     max-width: 700px;
 }
 
-article{
-    margin-bottom: 10px;
-    padding: 20px;
-    border-top: 1px solid gray;
+.slide{
+    height: 50px;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.slide1{
+    background: greenyellow;  
+}
+
+.slide1:before{
+    content: "Slide 1 has just appeared";
+}
+
+.slide2{
+    background: green;  
+}
+
+.slide2:before{
+    content: "Slide 2 has just appeared";
+}
+
+.slide3{
+    background: blueviolet;  
+}
+
+.slide3:before{
+    content: "Slide 3 has just appeared";
 }
