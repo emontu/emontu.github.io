@@ -1,34 +1,18 @@
 .wrapper {
-    margin: 30px auto;
-    max-width: 700px;
+  margin: 30px auto;
+  max-width: 1200px;
 }
 
-.slide{
-    height: 50px;
-    width: 100%;
-    border: 1px solid red;
+table {
+  border: 1px solid;
 }
 
-.slide1{
-    background: greenyellow;  
+table td {
+  padding: 15px;
+  border-left: 1px solid;
+  border-top: 1px solid;
 }
 
-.slide1:before{
-    content: "Slide 1 has just appeared";
-}
-
-.slide2{
-    background: green;  
-}
-
-.slide2:before{
-    content: "Slide 2 has just appeared";
-}
-
-.slide3{
-    background: blueviolet;  
-}
-
-.slide3:before{
-    content: "Slide 3 has just appeared";
+table td:first-child {
+  border-left: 0;
 }

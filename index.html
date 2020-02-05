@@ -1,17 +1,271 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Exercise Vanilla and ES6</title>
-    <link rel="stylesheet" type="text/css"  media="all" href="css/mystyles.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <h1>Utilities exercises</h1>
-      <h2>first wrapper</h2>
-    </div>
-    <div class="wrapper">
-      <h2>Second wrapper</h2>
-    </div>
-    <script type="text/javascript"  src="js/myjs.js"></script>
-  </body>
+
+<head>
+  <title>Exercise Vanilla and ES6</title>
+  <link rel="stylesheet" type="text/css" media="all" href="css/mystyles.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <table cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+        <tr>
+          <th aria-hidden="true"></th>
+          <th>Products</th>
+          <th>Availability</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Item Total</th>
+        </tr>
+        <tr>
+          <td width="58">
+            <div class="checkbox">
+              <input type="checkbox" class="select-product" value="true">
+            </div>
+          </td>
+          <td width="220">
+            <div class="description">
+              Apple MacBook Air with Retina display - 13.3" - Core i5 - 8 GB RAM - 128 GB
+            </div>
+            <ul class="part-info">
+              <li><label for="CartItems_mfginfo_1">MFG #:</label><span>MVFH2LL/A</span></li>
+              <li><label for="CartItems_partinfo_1">Part:</label><span>5642026</span></li>
+              <li><label for="CartItems_unspscinfo_1">UNSPSC:</label><span>43211503</span>
+              </li>
+            </ul>
+          </td>
+          <td width="170">
+            <div class="status">
+              <div class="in-stock">
+                In Stock
+              </div>
+              <div class="shipping-check">
+                <div class="shipping-arrival">Get it <strong><time>Monday, February 3</time></strong>&nbsp;</div>
+              </div>
+            </div>
+            <div class="membership-ship-wrapper membership-shipping-account">
+              <div class="membership-badge">
+                <div class="membership-free-shiping-logo">
+                  MEMBERSHIP SHIPPING
+                </div>
+              </div>
+            </div>
+          </td>
+          <td width="140">
+            <div class="cart-product-pricing">
+              <div class="amount">$999.99</div>
+              <div class="price-name">My Price</div>
+            </div>
+          </td>
+          <td width="100">
+            <input max="9999" min="1" type="number" value="1">
+          </td>
+          <td width="90">
+            <div class="item-total" data-item-total="999.99">$999.99</div>
+          </td>
+        </tr>
+        <tr>
+          <td width="58">
+            <div class="checkbox">
+              <input type="checkbox" class="select-product" value="true">
+            </div>
+          </td>
+          <td width="220">
+            <div class="description">
+              Apple MacBook Pro 13" Core i7 2.8GHz 16GB 512GB - Touch Bar - Space Gray
+            </div>
+            <ul class="part-info">
+              <li><label for="CartItems_mfginfo_1">MFG #:</label><span>Z0WQ-2000430193</span></li>
+              <li><label for="CartItems_partinfo_1">Part:</label><span>5578874</span></li>
+              <li><label for="CartItems_unspscinfo_1">UNSPSC:</label><span>N/A</span>
+              </li>
+            </ul>
+          </td>
+          <td width="170">
+            <div class="status">
+              <div class="in-stock">
+                In Stock
+              </div>
+              <div class="shipping-check">
+                <div class="shipping-arrival">Get it <strong><time>Monday, February 13</time></strong>&nbsp;</div>
+              </div>
+            </div>
+            <div class="membership-ship-wrapper membership-shipping-account">
+              <div class="membership-badge">
+                <div class="membership-free-shiping-logo">
+                  MEMBERSHIP SHIPPING
+                </div>
+              </div>
+            </div>
+          </td>
+          <td width="140">
+            <div class="cart-product-pricing">
+              <div class="amount">$2,519.99</div>
+              <div class="price-name">My Price</div>
+            </div>
+          </td>
+          <td width="100">
+            <input max="9999" min="1" type="number" value="1">
+          </td>
+          <td width="90">
+            <div class="item-total" data-item-total="2519.99">$2,519.99</div>
+          </td>
+        </tr>
+        <tr>
+          <td width="58">
+            <div class="checkbox">
+              <input type="checkbox" class="select-product" value="true">
+            </div>
+          </td>
+          <td width="220">
+            <div class="description">
+              Apple MacBook Pro with Touch Bar - 15.4" - Core i7 - 16 GB RAM - 256 GB SSD
+            </div>
+            <ul class="part-info">
+              <li><label for="CartItems_mfginfo_1">MFG #:</label><span>MR962LL/A</span></li>
+              <li><label for="CartItems_partinfo_1">Part:</label><span>5179764</span></li>
+              <li><label for="CartItems_unspscinfo_1">UNSPSC:</label><span>43211503</span>
+              </li>
+            </ul>
+          </td>
+          <td width="170">
+            <div class="status">
+              <div class="in-stock">
+                In Stock
+              </div>
+              <div class="shipping-check">
+                <div class="shipping-arrival">Get it <strong><time>Monday, February 13</time></strong>&nbsp;</div>
+              </div>
+            </div>
+            <div class="membership-ship-wrapper membership-shipping-account">
+              <div class="membership-badge">
+                <div class="membership-free-shiping-logo">
+                  MEMBERSHIP SHIPPING
+                </div>
+              </div>
+            </div>
+          </td>
+          <td width="140">
+            <div class="cart-product-pricing">
+              <div class="amount">$2,399.00</div>
+              <div class="price-name">My Price</div>
+            </div>
+          </td>
+          <td width="100">
+            <input max="9999" min="1" type="number" value="1">
+          </td>
+          <td width="90">
+            <div class="item-total" data-item-total="2399.00">$2,399.00</div>
+          </td>
+        </tr>
+        <tr>
+          <td width="58">
+            <div class="checkbox">
+              <input type="checkbox" class="select-product" value="true">
+            </div>
+          </td>
+          <td width="220">
+            <div class="description">
+              Apple Magic Mouse 2 - mouse - Bluetooth
+            </div>
+            <ul class="part-info">
+              <li><label for="CartItems_mfginfo_1">MFG #:</label><span>MLA02LL/A</span></li>
+              <li><label for="CartItems_partinfo_1">Part:</label><span>3868765</span></li>
+              <li><label for="CartItems_unspscinfo_1">UNSPSC:</label><span>43211708</span>
+              </li>
+            </ul>
+          </td>
+          <td width="170">
+            <div class="status">
+              <div class="in-stock">
+                In Stock
+              </div>
+              <div class="shipping-check">
+                <div class="shipping-arrival">Get it <strong><time>Monday, February 1</time></strong>&nbsp;</div>
+              </div>
+            </div>
+            <div class="membership-ship-wrapper membership-shipping-account">
+              <div class="membership-badge">
+                <div class="membership-free-shiping-logo">
+                  MEMBERSHIP SHIPPING
+                </div>
+              </div>
+            </div>
+          </td>
+          <td width="140">
+            <div class="cart-product-pricing">
+              <div class="amount">$79.00</div>
+              <div class="price-name">My Price</div>
+            </div>
+          </td>
+          <td width="100">
+            <input max="9999" min="1" type="number" value="1">
+          </td>
+          <td width="90">
+            <div class="item-total" data-item-total="79.00">$79.00</div>
+          </td>
+        </tr>
+        <tr>
+          <td width="58">
+            <div class="checkbox">
+              <input type="checkbox" class="select-product" value="true">
+            </div>
+          </td>
+          <td width="220">
+            <div class="description">
+              Apple Thunderbolt to FireWire Adapter for Mac
+            </div>
+            <ul class="part-info">
+              <li><label for="CartItems_mfginfo_1">MFG #:</label><span>MD464LL/A</span></li>
+              <li><label for="CartItems_partinfo_1">Part:</label><span>3771249</span</li> <li><label
+                    for="CartItems_unspscinfo_1">UNSPSC:</label><span>43211609</span>
+              </li>
+            </ul>
+          </td>
+          <td width="170">
+            <div class="status">
+              <div class="in-stock">
+                In Stock
+              </div>
+              <div class="shipping-check">
+                <div class="shipping-arrival">Get it <strong><time>Monday, May 1</time></strong>&nbsp;</div>
+              </div>
+            </div>
+            <div class="membership-ship-wrapper membership-shipping-account">
+              <div class="membership-badge">
+                <div class="membership-free-shiping-logo">
+                  MEMBERSHIP SHIPPING
+                </div>
+              </div>
+            </div>
+          </td>
+          <td width="140">
+            <div class="cart-product-pricing">
+              <div class="amount">$29.00</div>
+              <div class="price-name">My Price</div>
+            </div>
+          </td>
+          <td width="100">
+            <input max="9999" min="1" type="number" value="1">
+          </td>
+          <td width="90">
+            <div class="item-total" data-item-total="29.00">$29.00</div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <span>0 items selected</span>
+            <button type="button">Select all</button>
+            <button type="button">Deselect all</button>
+          </td>
+          <td>Subtotal:</td>
+          <td>$0.00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script type="text/javascript" src="js/myjs.js"></script>
+</body>
+
 </html>
